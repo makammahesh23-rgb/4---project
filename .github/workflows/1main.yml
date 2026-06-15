@@ -1,0 +1,18 @@
+name: Linux-Commands
+
+on:
+  push:
+
+jobs:
+  linux-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show Present Directory
+        run: pwd
+
+      - name: List Files
+        run: ls -la
+
+      - name: Show Current User
+        run: whoami
